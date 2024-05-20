@@ -2,7 +2,7 @@
 /* font-family: 'Inter', sans-serif; 300 500 */
 /* font-family: amsterdam-one; */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap');
-@font-face {font-family: amsterdam-one; src: url(fonts/amsterdam-one.ttf); font-display: swap;}
+@font-face {font-family: amsterdam-one; src: url(../fonts/amsterdam-one.ttf); font-display: swap;}
 
 /* Variables--------------------------------------------------------------------------------- */
 :root{
@@ -62,7 +62,7 @@ section{
     margin: 0 auto; 
     padding-top: 100px;
 }
-h1, h2{
+h1 span, h2{
     font-family: amsterdam-one;
     letter-spacing:  var(--SpacioLetter);
     font-size: var(--sizeTitle);
@@ -182,6 +182,7 @@ h1, h2{
     font-weight: 300;
     transition: all .3s;
 }
+
 .nav_item:hover{
     color: var(--colorPrincipal);
     scale: 1.2;

@@ -31,8 +31,8 @@
 
     <!-- Linkeados -->
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaQueries.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/indexMediaQueries.css">
     <title>Axel Meyrek Frontend</title>
 </head>
 
@@ -50,9 +50,10 @@
         <nav class="nav">
             <a href="#home" class="nav_item">Home</a>
             <a href="#sobreMi" class="nav_item">Sobre mi</a>
+            <a href="#portafolio" class="nav_item">Proyectos</a>
             <a href="#conocimientos" class="nav_item">Conocimientos</a>
-            <a href="#portafolio" class="nav_item">Portafolio</a>
             <a href="#contactame" class="nav_item">Contáctame</a>
+            <!-- <a href="./pages/blog.html" class="nav_item nav_item--blog">Blog</a> -->
         </nav>
         <div class="conteinerMenu">
             <p id="btnMenu" class="conteinerMenu_item conteinerMenu_item--off"><i class="fa-solid fa-bars"></i></p>
@@ -61,7 +62,11 @@
 
     <!-- Section Encabezado ----------------------------------------------- -->
     <section id="home" class="sectionEncabezado">
-        <h1 class="sectionEncabezado_title">Diseñador y Desarrollador Frontend</h1>
+        <h1 class="sectionEncabezado_title">
+            <span>Axel Meyrek</span>
+            <br>
+            <span>Mey Scripting</span>
+        </h1>
         <p class="sectionEncabezado_description">Me considero una persona creativa, con habilidades para la resolución
             de problemas y una gran capacidad de disciplina y organización en el trabajo.</p>
         <div class="conteinerRedes">
@@ -97,7 +102,7 @@
 
     <!-- Section Sobre Mi --------------------------------------------------------------------->
     <section id="sobreMi" class="sectionSobreMi">
-        <h1 class="sectionSobreMi_title">Sobre Mi</h1>
+        <h2 class="sectionSobreMi_title">Sobre Mi</h2>
 
         <div class="carrusel">
             <div class="cajaCarrusel">
@@ -123,6 +128,60 @@
 
 
     <!-- Space ---------------------------------------------------------------------->
+    <div class="conteinerSpace">
+        <span class="puntos">.</span>
+        <span class="puntos">.</span>
+        <span class="puntos">.</span>
+        <span class="puntos">.</span>
+        <span class="puntos">.</span>
+        <span class="puntos">.</span>
+    </div>
+
+
+
+
+    <!-- Section Proyectos------------------------------- -->
+    <section id="portafolio" class="sectionProyectos">
+        <h2 class="sectionProyectos_title">Proyectos</h2>
+
+        <div class="proyectos">
+            <img width="350px" height="350px" loading="lazy" class="proyecto_img" src="img/proyectoContadorVueltas.png"
+                alt="Captura de pantalla de una pagina web estatica sobre una plataforma de educación en linea">
+            <span class="proyecto_arrow">=></span>
+            <div class="proyectoConteinerDescription">
+                <h3 class="proyectoConteinerDescription_title">Contador de Vueltas UPAEP</h3>
+                <p class="proyectoConteinerDescription_description">He desarrollado una aplicación destinada a gestionar y registrar los tiempos de vuelta en carreras de autos. Esta herramienta proporciona un seguimiento preciso del desempeño de los autos y al final de la carrera, muestra las posiciones finales de los mejores autos. Es una solución ideal para eventos de carreras, ofreciendo una forma eficiente de monitorear y evaluar los resultados.</p>
+                <a target="_blank" href="https://electraton.netlify.app/" class="proyectoConteinerDescription_button">Darle un vistaso</a>
+            </div>
+        </div>
+
+        <div class="proyectos">
+            <img width="350px" height="350px" loading="lazy" class="proyecto_img" src="img/coortes.png"
+                alt="Captura de pantalla de un proyecto de desarrollo web sobre una aplicación de tareas">
+            <span class="proyecto_arrow">=></span>
+            <div class="proyectoConteinerDescription">
+                <h3 class="proyectoConteinerDescription_title">COORTES</h3>
+                <p class="proyectoConteinerDescription_description">"Coortes" es aplicación de gestión de cuadres de caja y ventas, te permite tener un control total de tu negocio desde tu dispositivo móvil. Registra tus cortes y ventas diarias y mantén un seguimiento detallado de tus ganancias y pérdidas.</p>
+                <a target="_blank" href="https://coortes.vercel.app/"
+                    class="proyectoConteinerDescription_button">Darle un vistaso</a>
+            </div>
+        </div>
+
+        <div class="proyectos">
+            <img width="350px" height="350px" loading="lazy" class="proyecto_img" src="img/PortafolioVeronica.png"
+                alt="Captura de pantalla de una pagina web estatica sobre una plataforma de educación en linea">
+            <span class="proyecto_arrow">=></span>
+            <div class="proyectoConteinerDescription">
+                <h3 class="proyectoConteinerDescription_title">Portafolio De Trabajo</h3>
+                <p class="proyectoConteinerDescription_description">He desarrollado un Portafolio de Trabajo para una Maestra en Dirección y Mercadotecnia, el cual ofrece un acceso directo para la descarga del CV, una sección de galería, así como una sección dedicada a los certificados obtenidos. Equipado con un modo oscuro para una experiencia visual óptima, y un método de contacto funcional.</p>
+                <a target="_blank" href="https://mtrveronica.netlify.app/" class="proyectoConteinerDescription_button">Darle un vistaso</a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Space -------------------------------------------------------------------->
     <div class="conteinerSpace">
         <span class="puntos">.</span>
         <span class="puntos">.</span>
@@ -218,60 +277,6 @@
     </div>
 
 
-    <!-- Section Proyectos------------------------------- -->
-    <section id="portafolio" class="sectionProyectos">
-        <h2 class="sectionProyectos_title">Proyectos</h2>
-
-        <div class="proyectos">
-            <img width="350px" height="350px" loading="lazy" class="proyecto_img" src="img/proyectoContadorVueltas.png"
-                alt="Captura de pantalla de una pagina web estatica sobre una plataforma de educación en linea">
-            <span class="proyecto_arrow">=></span>
-            <div class="proyectoConteinerDescription">
-                <h3 class="proyectoConteinerDescription_title">Contador de Vueltas UPAEP</h3>
-                <p class="proyectoConteinerDescription_description">He desarrollado una aplicación destinada a gestionar y registrar los tiempos de vuelta en carreras de autos. Esta herramienta proporciona un seguimiento preciso del desempeño de los autos y al final de la carrera, muestra las posiciones finales de los mejores autos. Es una solución ideal para eventos de carreras, ofreciendo una forma eficiente de monitorear y evaluar los resultados.</p>
-                <a target="_blank" href="https://electraton.netlify.app/" class="proyectoConteinerDescription_button">Darle un vistaso</a>
-            </div>
-        </div>
-
-        <div class="proyectos">
-            <img width="350px" height="350px" loading="lazy" class="proyecto_img" src="img/coortes.png"
-                alt="Captura de pantalla de un proyecto de desarrollo web sobre una aplicación de tareas">
-            <span class="proyecto_arrow">=></span>
-            <div class="proyectoConteinerDescription">
-                <h3 class="proyectoConteinerDescription_title">COORTES</h3>
-                <p class="proyectoConteinerDescription_description">"Coortes" es aplicación de gestión de cuadres de caja y ventas, te permite tener un control total de tu negocio desde tu dispositivo móvil. Registra tus cortes y ventas diarias y mantén un seguimiento detallado de tus ganancias y pérdidas.</p>
-                <a target="_blank" href="https://coortes.vercel.app/"
-                    class="proyectoConteinerDescription_button">Darle un vistaso</a>
-            </div>
-        </div>
-
-        <div class="proyectos">
-            <img width="350px" height="350px" loading="lazy" class="proyecto_img" src="img/PortafolioVeronica.png"
-                alt="Captura de pantalla de una pagina web estatica sobre una plataforma de educación en linea">
-            <span class="proyecto_arrow">=></span>
-            <div class="proyectoConteinerDescription">
-                <h3 class="proyectoConteinerDescription_title">Portafolio De Trabajo</h3>
-                <p class="proyectoConteinerDescription_description">He desarrollado un Portafolio de Trabajo para una Maestra en Dirección y Mercadotecnia, el cual ofrece un acceso directo para la descarga del CV, una sección de galería, así como una sección dedicada a los certificados obtenidos. Equipado con un modo oscuro para una experiencia visual óptima, y un método de contacto funcional.</p>
-                <a target="_blank" href="https://mtrveronica.netlify.app/" class="proyectoConteinerDescription_button">Darle un vistaso</a>
-            </div>
-        </div>
-    </section>
-
-
-
-    <!-- Space -------------------------------------------------------------------->
-    <div class="conteinerSpace">
-        <span class="puntos">.</span>
-        <span class="puntos">.</span>
-        <span class="puntos">.</span>
-        <span class="puntos">.</span>
-        <span class="puntos">.</span>
-        <span class="puntos">.</span>
-    </div>
-
-
-
-
 
 
     <!-- Section Contactame ----------------------------------------------------- -->
@@ -297,9 +302,10 @@
         <nav class="menu">
             <a href="#home" class="menu_item">Home</a>
             <a href="#sobreMi" class="menu_item">Sobre mi</a>
+            <a href="#portafolio" class="menu_item">Proyectos</a>
             <a href="#conocimientos" class="menu_item">Conocimientos</a>
-            <a href="#portafolio" class="menu_item">Portafolio</a>
             <a href="#contactame" class="menu_item">Contáctame</a>
+            <!-- <a href="./pages/blog.html" class="menu_item">Blog</a> -->
         </nav>
     </div>
 
@@ -311,8 +317,8 @@
 
     <script src="https://kit.fontawesome.com/7b35ff6dce.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="particles.js"></script>
-    <script src="app.js"></script>
+    <script src="./Js/particles.js"></script>
+    <script src="./Js/index.js"></script>
 </body>
 
 </html>
