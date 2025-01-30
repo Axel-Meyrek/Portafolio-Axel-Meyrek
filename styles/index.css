@@ -69,6 +69,11 @@ h1 span, h2{
     font-weight: 300;
     text-align: center;
 }
+
+.sectionEncabezado_title{
+    text-align: center;
+}
+
 .conteinerImg{
     max-width: 600px;
     width: 100%;
@@ -367,6 +372,8 @@ h1 span, h2{
 .proyecto_img{
     max-width: 350px;
     box-shadow: var(--shadowComponets);
+    border-radius: 5px;
+    margin-left: 10px;
 }
 .proyecto_arrow{
     font-size: var(--sizeTitle);
